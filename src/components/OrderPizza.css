@@ -164,7 +164,10 @@ button[type="submit"] {
 .mb-0 {
   font-weight: bold;
 }
-
+.hidden-input {
+  position: absolute;
+  left: -9999px;
+}
 /* Responsive tasarım için medya sorguları */
 @media (max-width: 768px) {
   .order-card {

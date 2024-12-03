@@ -189,7 +189,19 @@ export default function OrderPizza() {
                   <p className="text-danger small">{extrasError}</p>
                 )}
               </FormGroup>
+
               <FormGroup>
+                <div className="hidden-input">
+                  <Label for="name">İsim:</Label>
+                  <Input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minLength="3"
+                    placeholder="En az 3 karakter girin"
+                  />
+                </div>
                 <Label className="siparis" for="order-note">
                   Sipariş Notu
                 </Label>
