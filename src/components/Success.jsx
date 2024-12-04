@@ -1,15 +1,38 @@
 import "./Success.css";
 
-export default function Success() {
+import HomeFooter from "../components/HomeFooter.jsx";
+
+export default function Success({ orderData }) {
   return (
-    <div className="success-page">
-      <div className="success-header">
-        <img src="../Assets/Iteration-1-assets/logo.svg" alt="Logo" />{" "}
+    <>
+      <div className="success-page">
+        <div className="success-header">
+          <img src="../Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+        </div>
+        <div className="success-content">
+          <p className="lezzet">lezzetin yolda</p>
+          <p className="text-lezzet">SİPARİŞ ALINDI!</p>
+          <div className="siparis-ozet">
+            <p className="position">Position Absolute Acı Pizza</p>
+            <p>
+              Boyut: <span className="highlight">{orderData.size}</span>
+            </p>
+            <p>
+              Hamur: <span className="highlight">{orderData.dough}</span>
+            </p>
+            <p>
+              Ek Malzemeler:{" "}
+              <span className="highlight">{orderData.extras.join(", ")}</span>
+            </p>
+          </div>
+          <div className="sonuc">
+            <h3>Sipariş Toplamı</h3>
+            <p>Seçimler: {(orderData.total - 85.5).toFixed(2)}₺</p>
+            <p>Toplam: {orderData.total}₺</p>
+          </div>
+        </div>
       </div>
-      <div className="success-content">
-        <p>TEBRİKLER!</p>
-        <p>SİPARİŞİNİZ ALINDI!</p>
-      </div>
-    </div>
+      <HomeFooter></HomeFooter>
+    </>
   );
 }

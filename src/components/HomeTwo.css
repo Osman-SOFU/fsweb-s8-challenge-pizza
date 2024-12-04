@@ -1,0 +1,510 @@
+.container {
+  display: flex; /* Flexbox düzeni */
+  justify-content: space-between; /* Solda div 1, sağda div 2 ve 3 */
+  width: 100%;
+  height: 100vh; /* Tam ekran yüksekliği */
+}
+.right-side {
+  display: flex;
+  flex-direction: column; /* Alt alta hizalama */
+  gap: 5px; /* div 2 ve div 3 arasına boşluk ekler */
+  margin-left: 20px;
+  width: 50%; /* Sağ tarafın genişliği */
+}
+/* div 1 */
+.div-1 {
+  width: 50%;
+  height: 500px;
+  background: #ce2829;
+  border-radius: 12px;
+  position: relative;
+  background: url("Assets/Iteration-2-aseets/cta/kart-1.png") no-repeat center
+    center;
+  background-size: cover;
+}
+
+.text-special {
+  /* div */
+
+  position: absolute;
+  height: 251.75px;
+  left: 49px;
+  right: 323.39px;
+  top: 44px;
+}
+/* Özel Lezzetus */
+.special-lezzetus {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 72px;
+  color: #ffffff;
+}
+
+/* Acı Burger */
+.spicy-burger {
+  /* Position:Absolute Acı Burger */
+
+  position: absolute;
+  width: 275px;
+  height: 27px;
+  left: -10px;
+  top: 151.75px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  /* identical to box height, or 134% */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+/* Sipariş Ver Button */
+.order-button {
+  /* a */
+
+  position: absolute;
+  width: 138px;
+  height: 48px;
+  left: -10px;
+  top: calc(50% - 48px / 2 + 101.88px);
+
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+/* Sipariş Ver Text */
+.order-text {
+  /* SİPARİŞ VER */
+
+  position: absolute;
+  width: 102px;
+  height: 45px;
+  left: 30px;
+  top: 3px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+  /* or 343% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ce2829;
+}
+
+/* div 2 */
+.div-2 {
+  width: 100%;
+  height: 250px;
+  background: #ce2829;
+  border-radius: 12px;
+  position: relative;
+  background: url("Assets/Iteration-2-aseets/cta/kart-2.png") no-repeat center
+    center;
+  background-size: cover;
+}
+
+/* Hackathlon Burger Menü */
+.burger-menu {
+  /* Hackathlon Burger Menü */
+
+  position: absolute;
+  width: 182.35px;
+  height: 86px;
+  left: 32px;
+  top: 28.5px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.burger-button {
+  /* a */
+
+  position: absolute;
+  width: 138px;
+  height: 48px;
+  left: 32px;
+  top: calc(50% - 48px / 2 + 57.5px);
+
+  background: #ffffff;
+  border-radius: 50px;
+}
+.text-hack {
+  /* Group 31 */
+
+  margin: 0 auto;
+  width: 182.35px;
+  height: 163px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.burger-text {
+  /* SİPARİŞ VER */
+
+  position: absolute;
+  width: 102px;
+  height: 45px;
+  left: 30px;
+  top: 3px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+  /* or 343% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ce2829;
+}
+/* div 3 */
+.div-3 {
+  width: 100%;
+  height: 250px;
+  background: #ce2829;
+  border-radius: 12px;
+  position: relative;
+  background: url("Assets/Iteration-2-aseets/cta/kart-3.png") no-repeat center
+    center;
+  background-size: cover;
+}
+.text-cok {
+  /* div */
+
+  margin: 0 auto;
+  width: 212px;
+  height: 161px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.fast-delivery {
+  /* Çoooook hızlı npm gibi kurye */
+
+  position: absolute;
+  width: 254px;
+  height: 88px;
+  left: 32px;
+  top: 50px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+  display: flex;
+  align-items: center;
+
+  color: #d80027;
+}
+.fast-delivery span {
+  color: rgba(41, 41, 41, 1);
+}
+.siparis-button {
+  /* a */
+
+  position: absolute;
+  width: 138px;
+  height: 48px;
+  left: 32px;
+  top: calc(50% - 48px / 2 + 56.97px);
+
+  background: #ffffff;
+  border-radius: 50px;
+}
+.siparis-text {
+  /* SİPARİŞ VER */
+
+  position: absolute;
+  width: 102px;
+  height: 45px;
+  left: 30px;
+  top: 3px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+  /* or 343% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ce2829;
+}
+.alt-text {
+  /* div */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid yellow;
+  border-bottom: 3px solid yellow;
+}
+.text-acik {
+  /* Acıktıran Kodlara Doyuran Lezzetler */
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 56px;
+  /* or 134% */
+
+  color: #292929;
+}
+.text-en {
+  /* en çopk paketlenen menüler */
+
+  font-family: "Satisfy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+
+  color: #ce2829;
+}
+/* Genel buton stilleri */
+ul#pills-tab button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 20px; /* Butonlar arasında boşluk */
+  width: 100%; /* Tüm genişliği kaplasın */
+  flex-wrap: nowrap; /* Butonlar tek satırda kalsın */
+  overflow-x: auto; /* Butonlar taşarsa, yatay kaydırma ekleyebiliriz */
+  border-radius: 50px;
+  height: 66px;
+  background: #ffffff; /* Başlangıç arka plan rengi */
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Yumuşak geçişler */
+  white-space: nowrap;
+  width: auto;
+  flex-wrap: nowrap; /* Butonlar tek satırda kalsın */
+  overflow-x: auto; /* Butonlar taşarsa, yatay kaydırma ekleyebiliriz */
+}
+
+ul#pills-tab button img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+ul#pills-tab button span {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #292929; /* Başlangıçta metin rengi */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover Durumu */
+ul#pills-tab button:hover {
+  background-color: rgba(41, 41, 41, 1); /* Üzerine gelince arka plan rengi */
+  color: rgba(255, 255, 255, 1); /* Üzerine gelince yazı rengi */
+}
+
+ul#pills-tab button:hover span {
+  color: rgba(255, 255, 255, 1); /* Yalnızca metnin rengini değiştirir */
+}
+/* button#pills-ramen-tab */
+button#pills-ramen-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+  width: 146.72px;
+  height: 66px;
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Yumuşak geçiş */
+}
+
+/* Resim */
+button#pills-ramen-tab img {
+  width: 42px;
+  height: 42px;
+  background: url(.png); /* Resim URL'sini buraya ekleyebilirsiniz */
+  object-fit: cover;
+}
+
+/* Metin (Ramen) */
+button#pills-ramen-tab span {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #292929;
+}
+
+/* Hover Durumu */
+button#pills-ramen-tab:hover {
+  background-color: rgba(41, 41, 41, 1); /* Arka plan rengi */
+  color: rgba(255, 255, 255, 1); /* Yazı rengi */
+}
+
+button#pills-ramen-tab:hover span {
+  color: rgba(255, 255, 255, 1); /* Yalnızca metin rengi */
+}
+/* Ramen Metni */
+button#pills-ramen-tab span {
+  width: 54.72px;
+  height: 31px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px; /* Satır yüksekliği, 180% olabilecek şekilde */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #292929; /* Başlangıçta koyu gri renk */
+
+  /* Auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  transition: color 0.3s ease; /* Renk değişimi için geçiş */
+}
+
+/* Hover Durumu (Ramen metni) */
+button#pills-ramen-tab:hover span {
+  color: rgba(255, 255, 255, 1); /* Metin rengi beyaz olur */
+}
+.menu-card {
+  /* Frame 38 */
+
+  /* Auto layout */
+  display: flex; /* Kartları yan yana dizer */
+  justify-content: space-between; /* Kartlar arasına boşluk koyar */
+  flex-wrap: wrap;
+}
+.menu-container {
+  /* div */
+
+  /* Auto layout */
+  width: 30%; /* Kartların genişliğini ayarlamak için yüzde verebiliriz */
+  background-color: #fff; /* Arka plan rengi */
+  border-radius: 10px; /* Kartlara köşe yuvarlama */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekler */
+  margin: 10px; /* Kartlar arasında boşluk bırakır */
+  padding: 20px;
+}
+.image-container {
+  /* 1.png */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.text-container {
+  /* div */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.menu-container .title {
+  /* Terminal Pizza */
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  /* or 134% */
+  display: flex;
+  align-items: center;
+
+  color: #292929;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.rating-price-container {
+  /* div */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 120px;
+
+  width: 270.67px;
+  height: 29px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  color: rgba(27, 27, 27, 0.7);
+}
+.menu-container .price {
+  /* 60₺ */
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 124% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #292929;
+}
