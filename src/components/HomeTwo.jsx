@@ -65,62 +65,75 @@ export default function HomeTwo() {
         <ul id="pills-tab">
           {/* Ramen Butonu */}
           <li>
-            <button id="pills-ramen-tab">
-              <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="Ramen" />
-              <span>Ramen</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-ramen-tab">
+                <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="Ramen" />
+                <span>Ramen</span>
+              </button>
+            </a>
           </li>
 
           {/* Pizza Butonu */}
           <li>
-            <button id="pills-pizza-tab">
-              <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza" />
-              <span>Pizza</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-pizza-tab">
+                <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza" />
+                <span>Pizza</span>
+              </button>
+            </a>
           </li>
 
           {/* Burger Butonu */}
           <li>
-            <button id="pills-burger-tab">
-              <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="Burger" />
-              <span>Burger</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-burger-tab">
+                <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="Burger" />
+                <span>Burger</span>
+              </button>
+            </a>
           </li>
 
           {/* French Fries Butonu */}
           <li>
-            <button id="pills-french-fry-tab">
-              <img
-                src="Assets/Iteration-2-aseets/icons/4.svg"
-                alt="French Fries"
-              />
-              <span>French Fries</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-french-fry-tab">
+                <img
+                  src="Assets/Iteration-2-aseets/icons/4.svg"
+                  alt="French Fries"
+                />
+                <span>French Fries</span>
+              </button>
+            </a>
           </li>
 
           {/* Fast Food Butonu */}
           <li>
-            <button id="pills-fast-food-tab">
-              <img
-                src="Assets/Iteration-2-aseets/icons/5.svg"
-                alt="Fast Food"
-              />
-              <span>Fast Food</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-fast-food-tab">
+                <img
+                  src="Assets/Iteration-2-aseets/icons/5.svg"
+                  alt="Fast Food"
+                />
+                <span>Fast Food</span>
+              </button>
+            </a>
           </li>
 
           {/* Soft Drinks Butonu */}
           <li>
-            <button id="pills-drinks-tab">
-              <img
-                src="Assets/Iteration-2-aseets/icons/6.svg"
-                alt="Soft Drinks"
-              />
-              <span>Soft Drinks</span>
-            </button>
+            <a href="http://localhost:5173/orderpizza#">
+              <button id="pills-drinks-tab">
+                <img
+                  src="Assets/Iteration-2-aseets/icons/6.svg"
+                  alt="Soft Drinks"
+                />
+                <span>Soft Drinks</span>
+              </button>
+            </a>
           </li>
         </ul>
       </div>
+
       <section className="menu-card">
         <div className="menu-container">
           <div className="pizza-container">

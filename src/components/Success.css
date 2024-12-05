@@ -105,3 +105,77 @@ html {
   font-weight: bold; /* Koyu yazı */
   color: #ffffff; /* Beyaz renk */
 }
+/* Media Queries for mobile */
+@media (max-width: 768px) {
+  .lezzet {
+    font-size: 24px; /* Daha küçük font boyutu */
+    line-height: 32px; /* Satır yüksekliğini küçültüyoruz */
+    padding: 0.5rem; /* Daha küçük padding */
+  }
+
+  .sonuc {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .text-lezzet {
+    font-size: 50px; /* Başlık boyutunu küçültüyoruz */
+    line-height: 60px;
+    padding-bottom: 50px; /* Alttan boşluk */
+  }
+
+  .position {
+    font-size: 18px; /* Font boyutunu küçültüyoruz */
+    line-height: 24px; /* Satır yüksekliğini küçültüyoruz */
+  }
+
+  .siparis-ozet {
+    font-size: 14px; /* Daha küçük font boyutu */
+    line-height: 20px; /* Satır yüksekliğini küçültüyoruz */
+  }
+
+  /* Flex düzenlemeleri */
+  .success-content {
+    padding: 1rem; /* İçerik alanına padding ekliyoruz */
+  }
+
+  .text-lezzet {
+    font-size: 40px; /* Başlık boyutunu daha da küçültüyoruz */
+  }
+}
+
+@media (max-width: 480px) {
+  .lezzet {
+    font-size: 18px; /* Daha küçük font boyutu */
+    line-height: 24px;
+    padding: 0.25rem; /* Daha küçük padding */
+  }
+
+  .sonuc {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .text-lezzet {
+    font-size: 30px; /* Başlık boyutunu küçük yapıyoruz */
+    line-height: 40px;
+  }
+
+  .position {
+    font-size: 16px; /* Daha küçük font */
+    line-height: 22px;
+  }
+
+  .siparis-ozet {
+    font-size: 12px; /* Daha küçük yazı */
+    line-height: 18px;
+  }
+
+  .success-header {
+    padding: 0.5rem; /* Daha küçük padding */
+  }
+
+  .success-content {
+    padding: 1rem;
+  }
+}

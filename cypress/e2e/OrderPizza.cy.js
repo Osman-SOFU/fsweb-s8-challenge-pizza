@@ -37,7 +37,7 @@ describe("OrderPizza Component", () => {
     cy.visit("http://localhost:5173/orderpizza"); // Sipariş sayfasına git
 
     // Boyut ve hamur seçimi yap
-    cy.get('input[type="radio"][value="Büyük"]').check(); // Boyut: Büyük
+    cy.get(".btn-size").contains("L").click(); // Boyut: L
     cy.get("#dough-select").select("İnce"); // Hamur: İnce
 
     // 4 malzeme seç

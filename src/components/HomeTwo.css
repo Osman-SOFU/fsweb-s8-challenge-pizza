@@ -264,8 +264,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 3px solid yellow;
-  border-bottom: 3px solid yellow;
 }
 .text-acik {
   /* Acıktıran Kodlara Doyuran Lezzetler */
@@ -290,6 +288,9 @@
   /* or 138% */
 
   color: #ce2829;
+}
+.section a {
+  text-decoration: none; /* Linklerin altındaki çizgiyi kaldırır */
 }
 /* Genel buton stilleri */
 ul#pills-tab button {
@@ -507,4 +508,71 @@ button#pills-ramen-tab:hover span {
   text-align: right;
 
   color: #292929;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center;
+  }
+
+  .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .div-1,
+  .div-2,
+  .div-3 {
+    width: 90%; /* Ekrana tam uyacak şekilde genişlik */
+    height: 300px; /* Yükseklikleri küçük yapıyoruz */
+  }
+
+  .special-lezzetus {
+    font-size: 48px; /* Mobilde daha küçük font */
+    line-height: 50px;
+  }
+
+  .spicy-burger {
+    font-size: 16px; /* Daha küçük yazı */
+    line-height: 20px;
+  }
+
+  .order-button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .order-text,
+  .burger-text,
+  .siparis-text {
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .menu-container {
+    width: 100%; /* Kartlar tam genişlikte olacak */
+    margin: 10px 0; /* Aralarındaki boşluğu arttırıyoruz */
+  }
+
+  .menu-card {
+    flex-direction: column; /* Kartlar dikey hizalanır */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-special,
+  .spicy-burger,
+  .order-button,
+  .order-text {
+    font-size: 14px; /* Mobilde küçük yazılar */
+  }
+
+  .special-lezzetus {
+    font-size: 36px; /* Daha küçük başlık */
+  }
+
+  .fast-delivery {
+    font-size: 24px;
+  }
 }

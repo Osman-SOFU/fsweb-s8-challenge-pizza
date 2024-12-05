@@ -90,3 +90,83 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+/* Mobil Uyumlu Stil */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Footer öğelerini dikey sıraya yerleştiriyoruz */
+    padding: 30px 5%; /* Daha küçük padding */
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    align-items: center; /* Ortalamak için */
+    margin-bottom: 20px;
+  }
+
+  .footer-left h1 {
+    font-size: 35px; /* Küçük ekranlar için daha küçük font boyutu */
+  }
+
+  .footer-middle h3,
+  .footer-right h3 {
+    font-size: 20px; /* Başlık font boyutunu küçültüyoruz */
+    margin-top: 40px;
+  }
+
+  .footer-left p,
+  .footer-middle p {
+    font-size: 14px; /* Yazı boyutunu küçültüyoruz */
+  }
+
+  .footer-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .instagram-photos {
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun halinde göstereceğiz */
+    gap: 8px;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-left h1 {
+    font-size: 30px; /* H1 font boyutunu daha da küçültüyoruz */
+  }
+
+  .footer-middle h3,
+  .footer-right h3 {
+    font-size: 18px; /* Başlık font boyutunu küçültüyoruz */
+  }
+
+  .footer-left p,
+  .footer-middle p {
+    font-size: 13px; /* Yazı boyutunu küçültüyoruz */
+  }
+
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .instagram-photos {
+    grid-template-columns: 1fr; /* Sadece 1 sütun halinde göstereceğiz */
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

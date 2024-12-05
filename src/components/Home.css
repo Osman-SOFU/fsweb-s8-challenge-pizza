@@ -176,3 +176,85 @@ ul li img + span {
   font-size: 18px;
   font-weight: 500;
 }
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  /* Sayfa genel stil */
+  .banner-section {
+    flex-direction: column; /* Banner içeriğini dikey yerleştir */
+    height: auto; /* Yüksekliği içeriğe göre ayarla */
+  }
+
+  /* Logo stilini küçült */
+  .logo {
+    font-size: 40px;
+  }
+
+  /* Fırsat metnini küçült */
+  .firsat {
+    font-size: 28px;
+  }
+
+  /* Slogan metnini küçült */
+  .slogan {
+    font-size: 60px;
+  }
+
+  /* Buton yazı boyutunu küçült */
+  .btn-text {
+    font-size: 16px;
+  }
+
+  /* Menü öğelerinin düzenini değiştir */
+  ul {
+    gap: 15px; /* Menü öğeleri arasına boşluk ekle */
+  }
+
+  /* Menü öğelerini alt alta yerleştir */
+  ul li {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Resimler için boyutları küçült */
+  ul li img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Metin boyutunu küçült */
+  ul li span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Banner içeriklerini daha da sıkıştır */
+  .text-contain {
+    padding: 20px;
+  }
+
+  /* Logo stilini daha da küçült */
+  .logo {
+    font-size: 30px;
+  }
+
+  /* Fırsat metnini daha da küçült */
+  .firsat {
+    font-size: 24px;
+  }
+
+  /* Slogan metnini daha da küçült */
+  .slogan {
+    font-size: 50px;
+  }
+
+  /* Menü öğelerinin düzenini değiştirme */
+  ul {
+    flex-direction: column; /* Menü öğelerini dikey sıralama */
+  }
+
+  ul li {
+    text-align: center;
+  }
+}
