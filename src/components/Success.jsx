@@ -1,8 +1,13 @@
+import React, { useEffect } from "react";
 import "./Success.css";
-
 import HomeFooter from "../components/HomeFooter.jsx";
 
 export default function Success({ orderData }) {
+  useEffect(() => {
+    document.documentElement.scrollTop = 0; // veya
+    document.body.scrollTop = 0; // Sayfayı üst kısımdan başlat
+  }, []);
+
   return (
     <>
       <div className="success-page">
@@ -32,7 +37,7 @@ export default function Success({ orderData }) {
           </div>
         </div>
       </div>
-      <HomeFooter></HomeFooter>
+      <HomeFooter />
     </>
   );
 }
