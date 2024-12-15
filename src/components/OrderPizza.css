@@ -75,6 +75,7 @@
   text-align: center;
   gap: 10px; /* Aralarındaki mesafeyi ayarlayabilirsin */
   position: relative;
+  margin: 10px;
 }
 
 /* Seçilen boyut için renk değişimi */
@@ -118,20 +119,19 @@
 
 /* Checkbox tıklandığında background rengini değiştirme */
 .extra-options input[type="checkbox"]:checked {
-  background: rgba(
-    253,
-    201,
-    19,
-    1
-  ); /* Tıklandığında arka plan rengini ayarla */
+  background-color: rgba(253, 201, 19, 1);
+  /* Tıklandığında arka plan rengini ayarla */
+  border-radius: 3px;
 }
 
-.extra-options input[type="checkbox"]:checked + span::after {
-  content: "✔";
+.extra-options input[type="checkbox"]:checked::after {
+  content: "✔"; /* Tick işaretini ekle */
   color: black; /* Tick işaretinin rengi */
+  font-size: 16px; /* İsteğe bağlı: Tick işaretinin boyutu */
+  display: block;
   text-align: center;
-  line-height: 20px;
-  font-size: 16px;
+  line-height: 1; /* Yüksekliği hizala */
+  background-color: rgba(253, 201, 19, 1);
 }
 
 /* Hata mesajını stilize etme */
@@ -160,13 +160,16 @@
   /* Sipariş özeti ve buton kutusunu genişletmez */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   box-sizing: border-box;
   background: #faf7f2;
   border-radius: 6px;
   padding: 20px; /* İçerik için boşluk */
-  width: 30%;
-  font-size: 16px;
+  width: 350px;
+  height: 255px;
+  font-weight: 600;
+  font-size: 36px;
+  gap: 10px; /* Elemanlar arasındaki boşluk */
+  justify-content: space-between; /* Üst ve alt arasındaki boşluğu dengeler */
 }
 
 .boyut,
@@ -191,12 +194,102 @@
   background: #fdc913;
   border-radius: 6px;
   color: rgba(41, 41, 41, 1);
+  width: 100%;
+}
+.mb-0 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 124% */
+  display: flex;
+  align-items: center;
+
+  color: #292929;
 }
 .mb-1 {
   color: rgba(95, 95, 95, 1);
+
+  width: 154px;
+  height: 25px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+
+  color: #5f5f5f;
+}
+.mb-1 span {
+  width: 73px;
+  height: 25px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-left: 100px;
+
+  color: #5f5f5f;
 }
 .mb-2 {
-  color: rgba(206, 40, 41, 1);
+  width: 154px;
+  height: 25px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+
+  color: #ce2829;
+}
+.mb-2 span {
+  width: 73px;
+  height: 25px;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 138% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-left: 105px;
+
+  color: #ce2829;
+}
+.order-submit-container p {
+  margin-top: 25px; /* Paragraflar arasındaki boşluk */
+}
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.quantity-selector Button {
+  font-size: 36px; /* Buton yazı boyutunu büyüt */
+  height: 75px; /* Buton yüksekliğini artır */
+  width: 75px; /* Buton genişliğini artır */
+}
+
+.quantity-selector p {
+  font-size: 55px; /* Sayı yazısının boyutunu büyüt */
 }
 @media (max-width: 768px) {
   .app-header {

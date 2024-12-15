@@ -240,7 +240,7 @@ export default function OrderPizza({ onSubmit }) {
               >
                 -
               </Button>
-              <span className="mx-2">{quantity}</span>
+              <p className="mx-2">{quantity}</p>
               <Button
                 color="warning"
                 onClick={() => setQuantity(Math.max(1, quantity + 1))}
@@ -251,8 +251,12 @@ export default function OrderPizza({ onSubmit }) {
             <div className="order-submit-container">
               <div className="order-summary">
                 <p className="mb-0">Sipariş Toplamı</p>
-                <p className="mb-1">Seçimler: {(total - 85.5).toFixed(2)}₺</p>
-                <p className="mb-2">Toplam: {(total * quantity).toFixed(2)}₺</p>
+                <p className="mb-1">
+                  Seçimler: <span>{(total - 85.5).toFixed(2)}₺</span>
+                </p>
+                <p className="mb-2">
+                  Toplam: <span>{(total * quantity).toFixed(2)}₺</span>
+                </p>
               </div>
 
               <div className="submit-button">
