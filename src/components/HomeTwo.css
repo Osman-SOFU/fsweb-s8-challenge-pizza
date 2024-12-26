@@ -18,8 +18,7 @@
   background: #ce2829;
   border-radius: 12px;
   position: relative;
-  background: url("Assets/Iteration-2-aseets/cta/kart-1.png") no-repeat center
-    center;
+  background: url("public/kart-1.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -107,8 +106,7 @@
   background: #ce2829;
   border-radius: 12px;
   position: relative;
-  background: url("Assets/Iteration-2-aseets/cta/kart-2.png") no-repeat center
-    center;
+  background: url("public/kart-2.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -185,8 +183,7 @@
   background: #ce2829;
   border-radius: 12px;
   position: relative;
-  background: url("Assets/Iteration-2-aseets/cta/kart-3.png") no-repeat center
-    center;
+  background: url("public/kart-3.png") no-repeat center center;
   background-size: cover;
 }
 .text-cok {

@@ -1,19 +1,12 @@
 import { useHistory } from "react-router-dom";
-import {
-  Form,
-  Label,
-  Button,
-  Card,
-  CardBody,
-  Input,
-  CardText,
-  FormGroup,
-} from "reactstrap";
+import { Form, Label, Button, Input, FormGroup } from "reactstrap";
 import React, { useState, useEffect } from "react";
 import "./OrderPizza.css";
 import axios from "axios";
 import Success from "./Success";
 import HomeFooter from "../components/HomeFooter.jsx";
+import img1 from "../../Assets/Iteration-1-assets/logo.svg";
+import img2 from "../../Assets/Iteration-2-aseets/pictures/form-banner.png";
 
 export default function OrderPizza({ onSubmit }) {
   const history = useHistory();
@@ -105,13 +98,10 @@ export default function OrderPizza({ onSubmit }) {
   return (
     <>
       <div className="app-header">
-        <img src="../Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+        <img src={img1} alt="Logo" />
       </div>
       <div className="resim">
-        <img
-          src="Assets/Iteration-2-aseets/pictures/form-banner.png"
-          alt="Logo2"
-        />
+        <img src={img2} alt="Logo2" />
       </div>
       <div className="order-content">
         <div className="ana-content">
