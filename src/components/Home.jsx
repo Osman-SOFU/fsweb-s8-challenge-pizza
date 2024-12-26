@@ -8,6 +8,7 @@ import img3 from "../../Assets/Iteration-2-aseets/icons/3.svg";
 import img4 from "../../Assets/Iteration-2-aseets/icons/4.svg";
 import img5 from "../../Assets/Iteration-2-aseets/icons/5.svg";
 import img6 from "../../Assets/Iteration-2-aseets/icons/6.svg";
+import img7 from "../../Assets/Iteration-1-assets/logo.svg";
 
 export default function Home() {
   const history = useHistory();
@@ -31,11 +32,7 @@ export default function Home() {
       <section className="banner-section">
         <div className="banner">
           <div className="text-contain">
-            <img
-              className="logo"
-              src="Assets/Iteration-1-assets/logo.svg"
-              alt="Logo"
-            />
+            <img className="logo" src={img7} alt="Logo" />
             <h2 className="firsat">Fırsatı Kaçırma</h2>
             <h1 className="slogan">
               KOD ACIKTIRIR <br />

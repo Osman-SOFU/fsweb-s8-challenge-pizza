@@ -1,13 +1,22 @@
 import "./HomeTwo.css";
+import img1 from "../../Assets/Iteration-2-aseets/icons/1.svg";
+import img2 from "../../Assets/Iteration-2-aseets/icons/2.svg";
+import img3 from "../../Assets/Iteration-2-aseets/icons/3.svg";
+import img4 from "../../Assets/Iteration-2-aseets/icons/4.svg";
+import img5 from "../../Assets/Iteration-2-aseets/icons/5.svg";
+import img6 from "../../Assets/Iteration-2-aseets/icons/6.svg";
+import img7 from "../../Assets/Iteration-2-aseets/pictures/food-1.png";
+import img8 from "../../Assets/Iteration-2-aseets/pictures/food-2.png";
+import img9 from "../../Assets/Iteration-2-aseets/pictures/food-3.png";
 
 export default function HomeTwo() {
   const menuItems = [
-    { img: "Assets/Iteration-2-aseets/icons/1.svg", label: "Ramen" },
-    { img: "Assets/Iteration-2-aseets/icons/2.svg", label: "Pizza" },
-    { img: "Assets/Iteration-2-aseets/icons/3.svg", label: "Burger" },
-    { img: "Assets/Iteration-2-aseets/icons/4.svg", label: "French fries" },
-    { img: "Assets/Iteration-2-aseets/icons/5.svg", label: "Fast food" },
-    { img: "Assets/Iteration-2-aseets/icons/6.svg", label: "Soft drinks" },
+    { img: img1, label: "Ramen" },
+    { img: img2, label: "Pizza" },
+    { img: img3, label: "Burger" },
+    { img: img4, label: "French fries" },
+    { img: img5, label: "Fast food" },
+    { img: img6, label: "Soft drinks" },
   ];
   return (
     <>
@@ -67,7 +76,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-ramen-tab">
-                <img src="Assets/Iteration-2-aseets/icons/1.svg" alt="Ramen" />
+                <img src={img1} alt="Ramen" />
                 <span>Ramen</span>
               </button>
             </a>
@@ -77,7 +86,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-pizza-tab">
-                <img src="Assets/Iteration-2-aseets/icons/2.svg" alt="Pizza" />
+                <img src={img2} alt="Pizza" />
                 <span>Pizza</span>
               </button>
             </a>
@@ -87,7 +96,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-burger-tab">
-                <img src="Assets/Iteration-2-aseets/icons/3.svg" alt="Burger" />
+                <img src={img3} alt="Burger" />
                 <span>Burger</span>
               </button>
             </a>
@@ -97,10 +106,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-french-fry-tab">
-                <img
-                  src="Assets/Iteration-2-aseets/icons/4.svg"
-                  alt="French Fries"
-                />
+                <img src={img4} alt="French Fries" />
                 <span>French Fries</span>
               </button>
             </a>
@@ -110,10 +116,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-fast-food-tab">
-                <img
-                  src="Assets/Iteration-2-aseets/icons/5.svg"
-                  alt="Fast Food"
-                />
+                <img src={img5} alt="Fast Food" />
                 <span>Fast Food</span>
               </button>
             </a>
@@ -123,10 +126,7 @@ export default function HomeTwo() {
           <li>
             <a href="http://localhost:5173/orderpizza#">
               <button id="pills-drinks-tab">
-                <img
-                  src="Assets/Iteration-2-aseets/icons/6.svg"
-                  alt="Soft Drinks"
-                />
+                <img src={img6} alt="Soft Drinks" />
                 <span>Soft Drinks</span>
               </button>
             </a>
@@ -139,10 +139,7 @@ export default function HomeTwo() {
           <div className="pizza-container">
             {/* Resim Alanı */}
             <div className="image-container">
-              <img
-                src="Assets/Iteration-2-aseets/pictures/food-1.png"
-                alt="Terminal Pizza"
-              />
+              <img src={img7} alt="Terminal Pizza" />
             </div>
 
             {/* Başlık ve Alt Bilgiler */}
@@ -163,10 +160,7 @@ export default function HomeTwo() {
           <div className="aci-container">
             {/* Resim Alanı */}
             <div className="image-container">
-              <img
-                src="Assets/Iteration-2-aseets/pictures/food-2.png"
-                alt="Position Absolute Acı Pizza"
-              />
+              <img src={img8} alt="Position Absolute Acı Pizza" />
             </div>
 
             {/* Başlık ve Alt Bilgiler */}
@@ -187,10 +181,7 @@ export default function HomeTwo() {
           <div className="tavuk-container">
             {/* Resim Alanı */}
             <div className="image-container">
-              <img
-                src="Assets/Iteration-2-aseets/pictures/food-3.png"
-                alt="useEffect Tavuklu Burger"
-              />
+              <img src={img9} alt="useEffect Tavuklu Burger" />
             </div>
 
             {/* Başlık ve Alt Bilgiler */}
