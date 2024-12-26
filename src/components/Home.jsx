@@ -2,6 +2,12 @@ import { useHistory } from "react-router-dom";
 import "./Home.css";
 import HomeTwo from "../components/HomeTwo";
 import HomeFooter from "../components/HomeFooter";
+import img1 from "../../Assets/Iteration-2-aseets/icons/1.svg";
+import img2 from "../../Assets/Iteration-2-aseets/icons/2.svg";
+import img3 from "../../Assets/Iteration-2-aseets/icons/3.svg";
+import img4 from "../../Assets/Iteration-2-aseets/icons/4.svg";
+import img5 from "../../Assets/Iteration-2-aseets/icons/5.svg";
+import img6 from "../../Assets/Iteration-2-aseets/icons/6.svg";
 
 export default function Home() {
   const history = useHistory();
@@ -11,12 +17,12 @@ export default function Home() {
   }
 
   const menuItems = [
-    { img: "Assets/Iteration-2-aseets/icons/1.svg", label: "YENİ! Kore" },
-    { img: "Assets/Iteration-2-aseets/icons/2.svg", label: "Pizza" },
-    { img: "Assets/Iteration-2-aseets/icons/3.svg", label: "Burger" },
-    { img: "Assets/Iteration-2-aseets/icons/4.svg", label: "Kızartmalar" },
-    { img: "Assets/Iteration-2-aseets/icons/5.svg", label: "Fast food" },
-    { img: "Assets/Iteration-2-aseets/icons/6.svg", label: "Gazlı İçecek" },
+    { img: img1, label: "YENİ! Kore" },
+    { img: img2, label: "Pizza" },
+    { img: img3, label: "Burger" },
+    { img: img4, label: "Kızartmalar" },
+    { img: img5, label: "Fast food" },
+    { img: img6, label: "Gazlı İçecek" },
   ];
 
   return (
