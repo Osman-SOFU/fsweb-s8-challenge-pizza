@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Success.css";
 import HomeFooter from "../components/HomeFooter.jsx";
+import img1 from "../../Assets/Iteration-1-assets/logo.svg";
 
 export default function Success({ orderData }) {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function Success({ orderData }) {
     <>
       <div className="success-page">
         <div className="success-header">
-          <img src="../Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+          <img src={img1} alt="Logo" />
         </div>
         <div className="success-content">
           <p className="lezzet">lezzetin yolda</p>
